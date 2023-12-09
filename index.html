@@ -1,0 +1,2128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fresh</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="style-main.css" />
+    <link rel="stylesheet" href="swiper.css" />
+    <link
+      rel="stylesheet"
+      href="responsive-mobile.css"
+      media="screen and (max-width: 768px)"
+    />
+  </head>
+  <body>
+    <div class="header">
+      <div class="middle-header">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-xl-5 col-md-12 header-left" id="headerLeft">
+              <div class="wrap-left">
+                <div class="accountMoblie d-xl-none d-block">
+                  <a href="/account/login" style="border-right: 1px solid #fff"
+                    >Đăng nhập</a
+                  >
+                  <a href="/account/register">Đăng ký</a>
+                  <div class="close-menu">
+                    <svg
+                      aria-hidden="true"
+                      focusable="false"
+                      data-prefix="fal"
+                      data-icon="times-circle"
+                      role="img"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 512 512"
+                      class="svg-inline--fa fa-times-circle fa-w-16"
+                      id="close-menu"
+                    >
+                      <path
+                        fill="currentColor"
+                        d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 464c-118.7 0-216-96.1-216-216 0-118.7 96.1-216 216-216 118.7 0 216 96.1 216 216 0 118.7-96.1 216-216 216zm94.8-285.3L281.5 256l69.3 69.3c4.7 4.7 4.7 12.3 0 17l-8.5 8.5c-4.7 4.7-12.3 4.7-17 0L256 281.5l-69.3 69.3c-4.7 4.7-12.3 4.7-17 0l-8.5-8.5c-4.7-4.7-4.7-12.3 0-17l69.3-69.3-69.3-69.3c-4.7-4.7-4.7-12.3 0-17l8.5-8.5c4.7-4.7 12.3-4.7 17 0l69.3 69.3 69.3-69.3c4.7-4.7 12.3-4.7 17 0l8.5 8.5c4.6 4.7 4.6 12.3 0 17z"
+                        class=""
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+                <li><a href="#">Trang chủ</a></li>
+                <li><a href="#">Giới Thiệu</a></li>
+                <li>
+                  <a href="#">Sản Phẩm <i class="bi bi-caret-down-fill"></i></a>
+                  <ul class="list-item-header">
+                    <li><a href="#">Hạt giống</a></li>
+                    <li><a href="#">Hải sản tươi</a></li>
+                    <li><a href="#">Rau củ quả</a></li>
+                    <li><a href="#">Sản phẩm bán chạy</a></li>
+                    <li><a href="#">Thịt tươi sống</a></li>
+                    <li><a href="#">Thực phẩm tết</a></li>
+                    <li><a href="#">Thực phẩm khô</a></li>
+                    <li>
+                      <a href="#">Trái cây</a>
+                      <i
+                        class="bi bi-caret-right-fill"
+                        style="float: right"
+                      ></i>
+                      <ul class="list-item-header">
+                        <li><a href="#">Táo</a></li>
+                        <li><a href="#">Chuối</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="#">Trứng và bơ</a></li>
+                    <li><a href="#">Đồ ăn đóng hộp</a></li>
+                    <li><a href="#">Đồ uống</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Tin Tức</a></li>
+                <li><a href="#">Liên Hệ</a></li>
+              </div>
+            </div>
+            <div class="col-xl-2 col-md-3 header-img">
+              <a href="#"><img src="./image/logo.png" alt="logo" /></a>
+            </div>
+            <div class="col-xl-5 col-md-9 header-right">
+              <div class="search-header">
+                <input type="search" placeholder="Tìm kiếm" />
+                <button><i class="bi bi-search"></i></button>
+              </div>
+              <div class="link-header">
+                <a href="https://sfresh.w2.exdomain.net/account/login"
+                  ><i class="bi bi-heart"></i
+                  ><span class="countList">0</span></a
+                >
+                <a href="#"
+                  ><i class="bi bi-bag"></i><span class="countList">0</span></a
+                >
+                <i class="bi bi-filter-right" id="filterRight"></i>
+                <div class="login-header">
+                  <a href="https://sfresh.w2.exdomain.net/account/login"
+                    ><i class="bi bi-person-circle"></i>
+                    <ul class="drop-account">
+                      <li><a href="/account/login">Đăng nhập</a></li>
+                      <li><a href="/account/register">Đăng ký</a></li>
+                    </ul></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="slider">
+      <div class="carousel-img swiper">
+        <div class="list">
+          <div class="item">
+            <img
+              src="./image/slider_1-1650x540.png"
+              alt=""
+              draggable="false"
+            />
+          </div>
+        </div>
+        <ul class="dots">
+          <li class="active"></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="item-card-product wrapper">
+      <div class="container list-item-card carousel">
+        <div class="cate-item">
+          <a href="#"
+            ><img
+              src="./image/item/cate_1-150x150.png"
+              alt=""
+              draggable="false"
+          /></a>
+          <h3><a href="#">Trứng và bơ</a></h3>
+        </div>
+        <div class="cate-item">
+          <a href="#"
+            ><img
+              src="./image/item/cate_2-150x150.png"
+              alt=""
+              draggable="false"
+          /></a>
+          <h3><a href="#">Thực phẩm khô</a></h3>
+        </div>
+        <div class="cate-item">
+          <a href="#"
+            ><img
+              src="./image/item/cate_3-150x150.jpg"
+              alt=""
+              draggable="false"
+          /></a>
+          <h3><a href="#">Thịt tươi sống</a></h3>
+        </div>
+        <div class="cate-item">
+          <a href="#"
+            ><img
+              src="./image/item/cate_4-150x150.jpg"
+              alt=""
+              draggable="false"
+          /></a>
+          <h3><a href="#">Trái cây</a></h3>
+        </div>
+        <div class="cate-item">
+          <a href="#"
+            ><img
+              src="./image/item/cate_5-150x150.jpg"
+              alt=""
+              draggable="false"
+          /></a>
+          <h3><a href="#">Rau củ quả</a></h3>
+        </div>
+        <div class="cate-item">
+          <a href="#"
+            ><img
+              src="./image/item/cate_6-150x150.jpg"
+              alt=""
+              draggable="false"
+          /></a>
+          <h3><a href="#">Đô uống</a></h3>
+        </div>
+      </div>
+    </div>
+
+    <div class="container product-hot">
+      <div class="border-line">
+        <div class="bl-title">
+          <h3>
+            <a
+              href="https://sfresh.w2.exdomain.net/san-pham"
+              title=" Ưu đãi trong tuần"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px"
+                y="0px"
+                viewBox="0 0 511.548 511.548"
+                style="enable-background: new 0 0 511.548 511.548"
+                xml:space="preserve"
+                width="512"
+                height="512"
+              >
+                <g>
+                  <path
+                    style="fill: #ff6200"
+                    d="M394.441,191.548C307.52,95.547,287.775,20.882,287.775,20.882s-15.054,6.718-32,22.11 l-21.333,244.556l21.333,209h0.001c104.842-0.001,189.833-84.992,189.833-189.833C445.608,263.409,421.423,221.349,394.441,191.548 z"
+                  ></path>
+                  <path
+                    style="fill: #fd7d21"
+                    d="M223.775,84.882c-10.873,21.747-13.434,46.265-13.33,65.08c0.1,18.252-12.758,34.004-30.655,37.584 c-12.504,2.501-25.43-1.413-34.447-10.43l-17.568-17.568c0,0-26.044,35.911-30.507,42.667 c-20.047,30.346-31.613,66.786-31.321,105.945c0.778,104.581,85.244,188.388,189.828,188.388V42.992 C244.69,53.06,232.797,66.838,223.775,84.882z"
+                  ></path>
+                  <g>
+                    <path
+                      style="fill: #ffb62d"
+                      d="M405.561,181.48c-43.372-47.903-69.147-90.072-83.134-117.013 c-15.148-29.181-20.112-47.276-20.15-47.42L297.768,0l-16.104,7.183c-0.917,0.409-11.941,5.434-25.89,16.238l-10.667,18.794 l10.667,22.117c8.336-9.351,16.934-16.341,23.849-21.18c11.282,28.696,39.881,87.981,103.699,158.465 c14.217,15.702,47.285,57.376,47.285,105.099c0,96.403-78.43,174.833-174.832,174.833h-0.001l-10.667,19.333l10.667,10.667h0.001 c112.945-0.001,204.832-91.888,204.832-204.833C460.608,265.764,440.544,220.118,405.561,181.48z"
+                    ></path>
+                    <path
+                      style="fill: #fdcb02"
+                      d="M132.499,430.925c-32.898-32.646-51.206-76.285-51.553-122.876 c-0.26-34.878,9.712-68.616,28.837-97.565c2.335-3.534,11.702-16.602,19.833-27.879l5.119,5.119 c12.592,12.592,30.53,18.025,47.996,14.532c24.888-4.978,42.852-27.004,42.713-52.375c-0.087-15.701,1.881-38.558,11.746-58.29 c5.351-10.702,11.883-19.741,18.584-27.258V23.421c-14.692,11.381-32.628,29.175-45.417,54.753 c-12.515,25.031-15.018,52.9-14.913,71.87c0.061,11.04-7.761,20.626-18.598,22.793c-7.598,1.518-15.414-0.844-20.898-6.328 l-29.997-29.997l-10.319,14.229c-1.071,1.477-26.289,36.256-30.88,43.205c-22.419,33.937-34.109,73.47-33.806,114.325 c0.406,54.565,21.864,105.686,60.421,143.948c38.554,38.259,89.839,59.329,144.407,59.329v-30 C209.176,481.548,165.396,463.57,132.499,430.925z"
+                    ></path>
+                  </g>
+                  <g>
+                    <path
+                      style="fill: #ed3800"
+                      d="M255.775,206.042c-0.111,0-0.222,0.004-0.333,0.004l-24.997,117.329l24.997,117.329 c0.111,0,0.222,0.004,0.333,0.004c64.801,0,117.333-52.532,117.333-117.333C373.108,258.574,320.576,206.042,255.775,206.042z"
+                    ></path>
+                    <path
+                      style="fill: #ff4b00"
+                      d="M138.441,323.375c0,64.69,52.352,117.149,117,117.329V206.046 C190.794,206.226,138.441,258.685,138.441,323.375z"
+                    ></path>
+                  </g>
+                  <g>
+                    <polygon
+                      style="fill: #d9e7ec"
+                      points="319.432,254.503 286.177,254.503 255.441,299.513 245.108,340.882 255.441,348.214 "
+                    ></polygon>
+                    <path
+                      style="fill: #d9e7ec"
+                      d="M306.248,317.472c-20.858,0-36.601,13.971-36.601,38.372c0,24.597,15.742,38.371,36.601,38.371 s36.601-13.774,36.601-38.371C342.849,331.443,327.106,317.472,306.248,317.472z M306.248,372.963 c-4.329,0-8.658-3.936-8.658-17.12c0-13.184,4.329-17.12,8.658-17.12s8.658,3.936,8.658,17.12 C314.906,369.027,310.577,372.963,306.248,372.963z"
+                    ></path>
+                    <polygon
+                      style="fill: #fafcfd"
+                      points="225.372,392.247 255.441,348.214 255.441,299.513 192.117,392.247 "
+                    ></polygon>
+                    <path
+                      style="fill: #fafcfd"
+                      d="M241.902,290.907c0-24.4-15.742-38.372-36.601-38.372s-36.601,13.971-36.601,38.372 c0,24.597,15.742,38.372,36.601,38.372S241.902,315.504,241.902,290.907z M196.643,290.907c0-13.184,4.329-17.12,8.658-17.12 c4.329,0,8.658,3.936,8.658,17.12c0,13.184-4.329,17.12-8.658,17.12C200.972,308.027,196.643,304.091,196.643,290.907z"
+                    ></path>
+                  </g>
+                </g>
+              </svg>
+              Ưu đãi trong tuần
+            </a>
+          </h3>
+        </div>
+        <div class="bl-product carousel-product-hot swiper mySwiperitemProduct">
+          <div class="swiper-wrapper">
+            <div
+              class="wrapper-product-hot swiper-slide"
+              style="border: none !important"
+            >
+              <div class="item-product-main-hot">
+                <div class="sale-product-hot">
+                  <span>26%</span>
+                </div>
+                <a href="#"
+                  ><img
+                    src="./image/ProductHot/sp10-0x0.jpg"
+                    alt=""
+                    draggable="false"
+                /></a>
+                <div class="product-action">
+                  <i class="bi bi-heart" style="background-color: #eb3e32"></i>
+                  <i class="bi bi-cart3"></i>
+                </div>
+                <div class="infor-product-hot">
+                  <a href="#">Cá hồi</a>
+                  <div class="product-price">
+                    <span class="price">200,000đ</span>
+                    <span class="old-price">300,000đ</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="wrapper-product-hot swiper-slide"
+              style="border: none !important"
+            >
+              <div class="item-product-main-hot">
+                <div class="sale-product-hot">
+                  <span>26%</span>
+                </div>
+                <a href="#"
+                  ><img
+                    src="./image/ProductHot/sp22-0x0.jpg"
+                    alt=""
+                    draggable="false"
+                /></a>
+                <div class="product-action">
+                  <i class="bi bi-heart" style="background-color: #eb3e32"></i>
+                  <i class="bi bi-cart3"></i>
+                </div>
+                <div class="infor-product-hot">
+                  <a href="#">Ổi lê ruột đỏ</a>
+                  <div class="product-price">
+                    <span class="price">20,000đ</span>
+                    <span class="old-price">50,000đ</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="wrapper-product-hot swiper-slide"
+              style="border: none !important"
+            >
+              <div class="item-product-main-hot">
+                <!-- <div class="sale-product-hot">
+                <span>26%</span>
+              </div> -->
+                <a href="#"
+                  ><img
+                    src="./image/ProductHot/sp24-0x0.jpg"
+                    alt=""
+                    draggable="false"
+                /></a>
+                <div class="product-action">
+                  <i class="bi bi-heart" style="background-color: #eb3e32"></i>
+                  <i class="bi bi-cart3"></i>
+                </div>
+                <div class="infor-product-hot">
+                  <a href="#">Bánh mì gối</a>
+                  <div class="product-price">
+                    <span class="price">20,000đ</span>
+                    <!-- <span class="old-price">300,000đ</span> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="wrapper-product-hot swiper-slide"
+              style="border: none !important"
+            >
+              <div class="item-product-main-hot">
+                <!-- <div class="sale-product-hot">
+                <span>26%</span>
+              </div> -->
+                <a href="#"
+                  ><img
+                    src="./image/ProductHot/sp29-0x0.jpg"
+                    alt=""
+                    draggable="false"
+                /></a>
+                <div class="product-action">
+                  <i class="bi bi-heart" style="background-color: #eb3e32"></i>
+                  <i class="bi bi-cart3"></i>
+                </div>
+                <div class="infor-product-hot">
+                  <a href="#">Trứng gà</a>
+                  <div class="product-price">
+                    <span class="price">30,000đ</span>
+                    <!-- <span class="old-price">300,000đ</span> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="wrapper-product-hot swiper-slide"
+              style="border: none !important"
+            >
+              <div class="item-product-main-hot">
+                <div class="sale-product-hot">
+                  <span>26%</span>
+                </div>
+                <a href="#"
+                  ><img
+                    src="./image/ProductHot/sp3-0x0.jpg"
+                    alt=""
+                    draggable="false"
+                /></a>
+                <div class="product-action">
+                  <i class="bi bi-heart" style="background-color: #eb3e32"></i>
+                  <i class="bi bi-cart3"></i>
+                </div>
+                <div class="infor-product-hot">
+                  <a href="#">Dâu tây</a>
+                  <div class="product-price">
+                    <span class="price">138,000đ</span>
+                    <span class="old-price">238,000đ</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="wrapper-product-hot swiper-slide"
+              style="border: none !important"
+            >
+              <div class="item-product-main-hot">
+                <div class="sale-product-hot">
+                  <span>26%</span>
+                </div>
+                <a href="#"
+                  ><img
+                    src="./image/ProductHot/sp5-0x0.jpg"
+                    alt=""
+                    draggable="false"
+                /></a>
+                <div class="product-action">
+                  <i class="bi bi-heart" style="background-color: #eb3e32"></i>
+                  <i class="bi bi-cart3"></i>
+                </div>
+                <div class="infor-product-hot">
+                  <a href="#">Trái cam mật</a>
+                  <div class="product-price">
+                    <span class="price">128,000đ</span>
+                    <span class="old-price">138,000đ</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="wrapper-product-hot swiper-slide"
+              style="border: none !important"
+            >
+              <div class="item-product-main-hot">
+                <div class="sale-product-hot">
+                  <span>26%</span>
+                </div>
+                <a href="#"
+                  ><img
+                    src="./image/ProductHot/sp6-0x0.jpg"
+                    alt=""
+                    draggable="false"
+                /></a>
+                <div class="product-action">
+                  <i class="bi bi-heart" style="background-color: #eb3e32"></i>
+                  <i class="bi bi-cart3"></i>
+                </div>
+                <div class="infor-product-hot">
+                  <a href="#">Chanh tươi vỏ xanh</a>
+                  <div class="product-price">
+                    <span class="price">30,000đ</span>
+                    <span class="old-price">38,000đ</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="wrapper-product-hot swiper-slide"
+              style="border: none !important"
+            >
+              <div class="item-product-main-hot">
+                <div class="sale-product-hot">
+                  <span>26%</span>
+                </div>
+                <a href="#"
+                  ><img
+                    src="./image/ProductHot/sp2-0x0.jpg"
+                    alt=""
+                    draggable="false"
+                /></a>
+                <div class="product-action">
+                  <i class="bi bi-heart" style="background-color: #eb3e32"></i>
+                  <i class="bi bi-cart3"></i>
+                </div>
+                <div class="infor-product-hot">
+                  <a href="#">Đào đỏ mỹ</a>
+                  <div class="product-price">
+                    <span class="price">40,000đ</span>
+                    <span class="old-price">68,000đ</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </div>
+
+    <div class="container section-banner">
+      <div class="overflow-img">
+        <div style="overflow: hidden; border-radius: 20px">
+          <div class="list-banner">
+            <img src="./image/banner/banner_1-0x0.jpg" alt="" />
+          </div>
+        </div>
+        <div style="overflow: hidden; border-radius: 20px; margin-left: 20px">
+          <div class="list-banner">
+            <img src="./image/banner/banner_2-0x0.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="main-item-prodoct">
+      <div class="section_product line-item-product-left">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-3 col-lg-3 col-md-4 col-12">
+              <div class="title-links">
+                <h2 title="Trai cay">Trái cây</h2>
+                <div class="block-cate">
+                  <ul>
+                    <li>
+                      <a
+                        href="https://sfresh.w2.exdomain.net/chuoi"
+                        title="Chuối"
+                        >Chuối</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://sfresh.w2.exdomain.net/chuoi-2"
+                        title="Chuối 2"
+                      >
+                        Chuối 2
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://sfresh.w2.exdomain.net/trai-cay"
+                        title="Trái cây"
+                      >
+                        Trái cây</a
+                      >
+                    </li>
+                    <li>
+                      <a href="https://sfresh.w2.exdomain.net/tao" title="Táo"
+                        >Táo</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div class="view-more">
+                  <p>
+                    <a title="Mua sắm ngay bây giờ!">Mua sắm ngay bây giờ!</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-9 col-lg-9 col-md-8 col-12 list-itemCard">
+              <div class="slide-contant">
+                <div class="swiper mySwiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="  ">
+                        <div class="img-card" style="height: 230px">
+                          <a
+                            href="https://sfresh.w2.exdomain.net/7898-t-chuong-xanh"
+                          >
+                            <img
+                              src="https://sfresh.w2.exdomain.net/image/cache/catalog/sfresh/products/rau-cu/sp17-2-480x480.jpg"
+                              alt="Ớt chuông xanh"
+                            />
+                          </a>
+                          <div class="product-action">
+                            <i
+                              class="bi bi-heart"
+                              style="background-color: #eb3e32"
+                            ></i>
+                            <i class="bi bi-cart3"></i>
+                          </div>
+                        </div>
+                        <div class="product-info">
+                          <a
+                            href="https://sfresh.w2.exdomain.net/7898-t-chuong-xanh"
+                            title="Ớt chuông xanh"
+                            class="item-product-name"
+                            >Ớt chuông xanh</a
+                          >
+                          <div class="product__price">
+                            <span class="price">12,000đ</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="card-item">
+                        <div class="img-card" style="height: 230px">
+                          <a
+                            href="https://sfresh.w2.exdomain.net/banh-mi-g-7889-i"
+                          >
+                            <img
+                              src="https://sfresh.w2.exdomain.net/image/cache/catalog/sfresh/products/thuc-pham-kho/sp24-480x480.jpg"
+                              alt="Bánh mì gối"
+                            />
+                          </a>
+                          <div class="product-action">
+                            <i
+                              class="bi bi-heart"
+                              style="background-color: #eb3e32"
+                            ></i>
+                            <i class="bi bi-cart3"></i>
+                          </div>
+                        </div>
+                        <div class="product-info">
+                          <a
+                            href="https://sfresh.w2.exdomain.net/7898-t-chuong-xanh"
+                            title="Ớt chuông xanh"
+                            class="item-product-name"
+                            >Bánh mì gối</a
+                          >
+                          <div class="product__price">
+                            <span class="price">20,000đ</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="card-item">
+                        <div class="img-card" style="height: 230px">
+                          <a
+                            href="https://sfresh.w2.exdomain.net/7898-t-chuong-xanh"
+                          >
+                            <img
+                              src="https://sfresh.w2.exdomain.net/image/cache/catalog/sfresh/products/thuc-pham-kho/sp32-480x480.jpg"
+                              alt="Bơ nấu ăn"
+                            />
+                          </a>
+                          <div class="product-action">
+                            <i
+                              class="bi bi-heart"
+                              style="background-color: #eb3e32"
+                            ></i>
+                            <i class="bi bi-cart3"></i>
+                          </div>
+                        </div>
+                        <div class="product-info">
+                          <a
+                            href="https://sfresh.w2.exdomain.net/7898-t-chuong-xanh"
+                            title="Bơ nấu ăn"
+                            class="item-product-name"
+                            >Bơ nấu ăn</a
+                          >
+                          <div class="product__price">
+                            <span class="price">Liên hệ</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="card-item">
+                        <div class="img-card" style="height: 230px">
+                          <a
+                            href="https://sfresh.w2.exdomain.net/7898-t-chuong-xanh"
+                          >
+                            <img
+                              src="https://sfresh.w2.exdomain.net/image/cache/catalog/sfresh/products/rau-cu/sp14-480x480.jpg"
+                              alt="Bông cải xanh"
+                            />
+                          </a>
+                          <div class="product-action">
+                            <i
+                              class="bi bi-heart"
+                              style="background-color: #eb3e32"
+                            ></i>
+                            <i class="bi bi-cart3"></i>
+                          </div>
+                        </div>
+                        <div class="product-info">
+                          <a
+                            href="https://sfresh.w2.exdomain.net/7898-t-chuong-xanh"
+                            title="Bông cải xanh"
+                            class="item-product-name"
+                            >Bông cải xanh</a
+                          >
+                          <div class="product__price">
+                            <span class="price">15,000đ</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="card-item">
+                        <div class="img-card" style="height: 230px">
+                          <a
+                            href="https://sfresh.w2.exdomain.net/7898-t-chuong-xanh"
+                          >
+                            <img
+                              src="https://sfresh.w2.exdomain.net/image/cache/catalog/sfresh/products/rau-cu/sp20-480x480.jpg"
+                              alt="Cà chua"
+                            />
+                          </a>
+                          <div class="product-action">
+                            <i
+                              class="bi bi-heart"
+                              style="background-color: #eb3e32"
+                            ></i>
+                            <i class="bi bi-cart3"></i>
+                          </div>
+                        </div>
+                        <div class="product-info">
+                          <a
+                            href="https://sfresh.w2.exdomain.net/7898-t-chuong-xanh"
+                            title="Cà chua"
+                            class="item-product-name"
+                            >Cà chua</a
+                          >
+                          <div class="product__price">
+                            <span class="price">15,000đ</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="card-item">
+                        <div class="img-card" style="height: 230px">
+                          <a
+                            href="https://sfresh.w2.exdomain.net/7898-t-chuong-xanh"
+                          >
+                            <img
+                              src="https://sfresh.w2.exdomain.net/image/cache/catalog/sfresh/products/rau-cu/sp7-480x480.jpg"
+                              alt="Hành tây"
+                            />
+                          </a>
+                          <div class="product-action">
+                            <i
+                              class="bi bi-heart"
+                              style="background-color: #eb3e32"
+                            ></i>
+                            <i class="bi bi-cart3"></i>
+                          </div>
+                        </div>
+                        <div class="product-info">
+                          <a
+                            href="https://sfresh.w2.exdomain.net/7898-t-chuong-xanh"
+                            title="Hành tây"
+                            class="item-product-name"
+                            >Hành tây</a
+                          >
+                          <div class="product__price">
+                            <span class="price">12,000đ</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="card-item">
+                        <div class="img-card" style="height: 230px">
+                          <a
+                            href="https://sfresh.w2.exdomain.net/7898-t-chuong-xanh"
+                          >
+                            <img
+                              src="	https://sfresh.w2.exdomain.net/image/cache/catalog/sfresh/products/rau-cu/sp30-480x480.jpg"
+                              alt="Khoai tây"
+                            />
+                          </a>
+                          <div class="product-action">
+                            <i
+                              class="bi bi-heart"
+                              style="background-color: #eb3e32"
+                            ></i>
+                            <i class="bi bi-cart3"></i>
+                          </div>
+                        </div>
+                        <div class="product-info">
+                          <a
+                            href="https://sfresh.w2.exdomain.net/7898-t-chuong-xanh"
+                            title="Khoai tây"
+                            class="item-product-name"
+                            >Khoai tây</a
+                          >
+                          <div class="product__price">
+                            <span class="price">25,000đ</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="card-item">
+                        <div class="img-card" style="height: 230px">
+                          <a
+                            href="https://sfresh.w2.exdomain.net/7898-t-chuong-xanh"
+                          >
+                            <img
+                              src="https://sfresh.w2.exdomain.net/image/cache/catalog/sfresh/products/rau-cu/sp15-480x480.jpg"
+                              alt="Nấm ăn"
+                            />
+                          </a>
+                          <div class="product-action">
+                            <i
+                              class="bi bi-heart"
+                              style="background-color: #eb3e32"
+                            ></i>
+                            <i class="bi bi-cart3"></i>
+                          </div>
+                        </div>
+                        <div class="product-info">
+                          <a
+                            href="https://sfresh.w2.exdomain.net/7898-t-chuong-xanh"
+                            title="Nấm ăn"
+                            class="item-product-name"
+                            >Nấm ăn</a
+                          >
+                          <div class="product__price">
+                            <span class="price">Liên hệ</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section_product line-item-product-right">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-9 col-lg-9 col-md-8 col-12 list-itemCard">
+              <div class="slide-contant">
+                <div class="swiper mySwiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="card-item" style="position: relative">
+                        <div class="img-card" style="height: 230px">
+                          <a
+                            href="https://sfresh.w2.exdomain.net/7898-t-chuong-xanh"
+                          >
+                            <img
+                              src="https://sfresh.w2.exdomain.net/image/cache/catalog/sfresh/products/rau-cu/sp17-2-480x480.jpg"
+                              alt="Ớt chuông xanh"
+                            />
+                          </a>
+
+                          <div class="product-action">
+                            <i
+                              class="bi bi-heart"
+                              style="background-color: #eb3e32"
+                            ></i>
+                            <i class="bi bi-cart3"></i>
+                          </div>
+                        </div>
+                        <div class="product-info">
+                          <a
+                            href="https://sfresh.w2.exdomain.net/7898-t-chuong-xanh"
+                            title="Ớt chuông xanh"
+                            class="item-product-name"
+                            >Ớt chuông xanh</a
+                          >
+                          <div class="product__price">
+                            <span class="price">12,000đ</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="card-item">
+                        <div class="img-card" style="height: 230px">
+                          <a
+                            href="https://sfresh.w2.exdomain.net/banh-mi-g-7889-i"
+                          >
+                            <img
+                              src="https://sfresh.w2.exdomain.net/image/cache/catalog/sfresh/products/thuc-pham-kho/sp24-480x480.jpg"
+                              alt="Bánh mì gối"
+                            />
+                          </a>
+                          <div class="product-action">
+                            <i
+                              class="bi bi-heart"
+                              style="background-color: #eb3e32"
+                            ></i>
+                            <i class="bi bi-cart3"></i>
+                          </div>
+                        </div>
+                        <div class="product-info">
+                          <a
+                            href="https://sfresh.w2.exdomain.net/7898-t-chuong-xanh"
+                            title="Ớt chuông xanh"
+                            class="item-product-name"
+                            >Bánh mì gối</a
+                          >
+                          <div class="product__price">
+                            <span class="price">20,000đ</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="card-item">
+                        <div class="img-card" style="height: 230px">
+                          <a
+                            href="https://sfresh.w2.exdomain.net/7898-t-chuong-xanh"
+                          >
+                            <img
+                              src="https://sfresh.w2.exdomain.net/image/cache/catalog/sfresh/products/thuc-pham-kho/sp32-480x480.jpg"
+                              alt="Bơ nấu ăn"
+                            />
+                          </a>
+                          <div class="product-action">
+                            <i
+                              class="bi bi-heart"
+                              style="background-color: #eb3e32"
+                            ></i>
+                            <i class="bi bi-cart3"></i>
+                          </div>
+                        </div>
+                        <div class="product-info">
+                          <a
+                            href="https://sfresh.w2.exdomain.net/7898-t-chuong-xanh"
+                            title="Bơ nấu ăn"
+                            class="item-product-name"
+                            >Bơ nấu ăn</a
+                          >
+                          <div class="product__price">
+                            <span class="price">Liên hệ</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="card-item">
+                        <div class="img-card" style="height: 230px">
+                          <a
+                            href="https://sfresh.w2.exdomain.net/7898-t-chuong-xanh"
+                          >
+                            <img
+                              src="https://sfresh.w2.exdomain.net/image/cache/catalog/sfresh/products/rau-cu/sp14-480x480.jpg"
+                              alt="Bông cải xanh"
+                            />
+                          </a>
+                          <div class="product-action">
+                            <i
+                              class="bi bi-heart"
+                              style="background-color: #eb3e32"
+                            ></i>
+                            <i class="bi bi-cart3"></i>
+                          </div>
+                        </div>
+                        <div class="product-info">
+                          <a
+                            href="https://sfresh.w2.exdomain.net/7898-t-chuong-xanh"
+                            title="Bông cải xanh"
+                            class="item-product-name"
+                            >Bông cải xanh</a
+                          >
+                          <div class="product__price">
+                            <span class="price">15,000đ</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="card-item">
+                        <div class="img-card" style="height: 230px">
+                          <a
+                            href="https://sfresh.w2.exdomain.net/7898-t-chuong-xanh"
+                          >
+                            <img
+                              src="https://sfresh.w2.exdomain.net/image/cache/catalog/sfresh/products/rau-cu/sp20-480x480.jpg"
+                              alt="Cà chua"
+                            />
+                          </a>
+                          <div class="product-action">
+                            <i
+                              class="bi bi-heart"
+                              style="background-color: #eb3e32"
+                            ></i>
+                            <i class="bi bi-cart3"></i>
+                          </div>
+                        </div>
+                        <div class="product-info">
+                          <a
+                            href="https://sfresh.w2.exdomain.net/7898-t-chuong-xanh"
+                            title="Cà chua"
+                            class="item-product-name"
+                            >Cà chua</a
+                          >
+                          <div class="product__price">
+                            <span class="price">15,000đ</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="card-item">
+                        <div class="img-card" style="height: 230px">
+                          <a
+                            href="https://sfresh.w2.exdomain.net/7898-t-chuong-xanh"
+                          >
+                            <img
+                              src="https://sfresh.w2.exdomain.net/image/cache/catalog/sfresh/products/rau-cu/sp7-480x480.jpg"
+                              alt="Hành tây"
+                            />
+                          </a>
+                          <div class="product-action">
+                            <i
+                              class="bi bi-heart"
+                              style="background-color: #eb3e32"
+                            ></i>
+                            <i class="bi bi-cart3"></i>
+                          </div>
+                        </div>
+                        <div class="product-info">
+                          <a
+                            href="https://sfresh.w2.exdomain.net/7898-t-chuong-xanh"
+                            title="Hành tây"
+                            class="item-product-name"
+                            >Hành tây</a
+                          >
+                          <div class="product__price">
+                            <span class="price">12,000đ</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="card-item">
+                        <div class="img-card" style="height: 230px">
+                          <a
+                            href="https://sfresh.w2.exdomain.net/7898-t-chuong-xanh"
+                          >
+                            <img
+                              src="	https://sfresh.w2.exdomain.net/image/cache/catalog/sfresh/products/rau-cu/sp30-480x480.jpg"
+                              alt="Khoai tây"
+                            />
+                          </a>
+                          <div class="product-action">
+                            <i
+                              class="bi bi-heart"
+                              style="background-color: #eb3e32"
+                            ></i>
+                            <i class="bi bi-cart3"></i>
+                          </div>
+                        </div>
+                        <div class="product-info">
+                          <a
+                            href="https://sfresh.w2.exdomain.net/7898-t-chuong-xanh"
+                            title="Khoai tây"
+                            class="item-product-name"
+                            >Khoai tây</a
+                          >
+                          <div class="product__price">
+                            <span class="price">25,000đ</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="card-item">
+                        <div class="img-card" style="height: 230px">
+                          <a
+                            href="https://sfresh.w2.exdomain.net/7898-t-chuong-xanh"
+                          >
+                            <img
+                              src="https://sfresh.w2.exdomain.net/image/cache/catalog/sfresh/products/rau-cu/sp15-480x480.jpg"
+                              alt="Nấm ăn"
+                            />
+                          </a>
+                          <div class="product-action">
+                            <i
+                              class="bi bi-heart"
+                              style="background-color: #eb3e32"
+                            ></i>
+                            <i class="bi bi-cart3"></i>
+                          </div>
+                        </div>
+                        <div class="product-info">
+                          <a
+                            href="https://sfresh.w2.exdomain.net/7898-t-chuong-xanh"
+                            title="Nấm ăn"
+                            class="item-product-name"
+                            >Nấm ăn</a
+                          >
+                          <div class="product__price">
+                            <span class="price">Liên hệ</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-4 col-12">
+              <div
+                style="
+                  background: url(https://sfresh.w2.exdomain.net/image/cache/catalog/sfresh/products/bg-title-link-2-0x0.jpg)
+                    no-repeat center !important;
+                  height: 305px;
+                "
+                class="title-links"
+              >
+                <h2 title="Rau củ quả">Rau củ quả</h2>
+                <div class="block-cate">
+                  <ul>
+                    <li>
+                      <a
+                        href="https://sfresh.w2.exdomain.net/chuoi"
+                        title="Chuối"
+                        >Chuối</a
+                      >
+                    </li>
+                    <li>
+                      <a href="https://sfresh.w2.exdomain.net/tao" title="Táo"
+                        >Táo</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div class="view-more">
+                  <p>
+                    <a title="Mua sắm ngay bây giờ!">Mua sắm ngay bây giờ!</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section_product line-item-product-left">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-3 col-lg-3 col-md-4 col-12">
+              <div
+                style="
+                  background: url(https://sfresh.w2.exdomain.net/image/cache/catalog/sfresh/products/bg-title-link-3-0x0.jpg)
+                    no-repeat center !important;
+                  height: 305px;
+                "
+                class="title-links"
+              >
+                <h2 title="Thực phẩm tươi">Thực phẩm tươi</h2>
+                <div class="block-cate">
+                  <ul>
+                    <li>
+                      <a
+                        href="https://sfresh.w2.exdomain.net/chuoi"
+                        title="Chuối"
+                        >Chuối</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://sfresh.w2.exdomain.net/chuoi-2"
+                        title="Hải sản tươi"
+                      >
+                        Hải sản tươi
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://sfresh.w2.exdomain.net/trai-cay"
+                        title="Rau củ quả"
+                      >
+                        Rau củ quả</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://sfresh.w2.exdomain.net/tao"
+                        title="Thịt tươi sống"
+                        >Thịt tươi sống</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://sfresh.w2.exdomain.net/trai-cay"
+                        title="Trái cây"
+                        >Trái cây</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div class="view-more">
+                  <p>
+                    <a title="Mua sắm ngay bây giờ!">Mua sắm ngay bây giờ!</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-9 col-lg-9 col-md-8 col-12 list-itemCard">
+              <div class="slide-contant">
+                <div class="swiper mySwiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="card-item">
+                        <div class="img-card" style="height: 230px">
+                          <a
+                            href="https://sfresh.w2.exdomain.net/7898-t-chuong-xanh"
+                          >
+                            <img
+                              src="https://sfresh.w2.exdomain.net/image/cache/catalog/sfresh/products/rau-cu/sp17-2-480x480.jpg"
+                              alt="Ớt chuông xanh"
+                            />
+                          </a>
+                          <div class="product-action">
+                            <i
+                              class="bi bi-heart"
+                              style="background-color: #eb3e32"
+                            ></i>
+                            <i class="bi bi-cart3"></i>
+                          </div>
+                        </div>
+                        <div class="product-info">
+                          <a
+                            href="https://sfresh.w2.exdomain.net/7898-t-chuong-xanh"
+                            title="Ớt chuông xanh"
+                            class="item-product-name"
+                            >Ớt chuông xanh</a
+                          >
+                          <div class="product__price">
+                            <span class="price">12,000đ</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="card-item">
+                        <div class="img-card" style="height: 230px">
+                          <a
+                            href="https://sfresh.w2.exdomain.net/banh-mi-g-7889-i"
+                          >
+                            <img
+                              src="https://sfresh.w2.exdomain.net/image/cache/catalog/sfresh/products/thuc-pham-kho/sp24-480x480.jpg"
+                              alt="Bánh mì gối"
+                            />
+                          </a>
+                          <div class="product-action">
+                            <i
+                              class="bi bi-heart"
+                              style="background-color: #eb3e32"
+                            ></i>
+                            <i class="bi bi-cart3"></i>
+                          </div>
+                        </div>
+                        <div class="product-info">
+                          <a
+                            href="https://sfresh.w2.exdomain.net/7898-t-chuong-xanh"
+                            title="Ớt chuông xanh"
+                            class="item-product-name"
+                            >Bánh mì gối</a
+                          >
+                          <div class="product__price">
+                            <span class="price">20,000đ</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="card-item">
+                        <div class="img-card" style="height: 230px">
+                          <a
+                            href="https://sfresh.w2.exdomain.net/7898-t-chuong-xanh"
+                          >
+                            <img
+                              src="https://sfresh.w2.exdomain.net/image/cache/catalog/sfresh/products/thuc-pham-kho/sp32-480x480.jpg"
+                              alt="Bơ nấu ăn"
+                            />
+                          </a>
+                          <div class="product-action">
+                            <i
+                              class="bi bi-heart"
+                              style="background-color: #eb3e32"
+                            ></i>
+                            <i class="bi bi-cart3"></i>
+                          </div>
+                        </div>
+                        <div class="product-info">
+                          <a
+                            href="https://sfresh.w2.exdomain.net/7898-t-chuong-xanh"
+                            title="Bơ nấu ăn"
+                            class="item-product-name"
+                            >Bơ nấu ăn</a
+                          >
+                          <div class="product__price">
+                            <span class="price">Liên hệ</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="card-item">
+                        <div class="img-card" style="height: 230px">
+                          <a
+                            href="https://sfresh.w2.exdomain.net/7898-t-chuong-xanh"
+                          >
+                            <img
+                              src="https://sfresh.w2.exdomain.net/image/cache/catalog/sfresh/products/rau-cu/sp14-480x480.jpg"
+                              alt="Bông cải xanh"
+                            />
+                          </a>
+                          <div class="product-action">
+                            <i
+                              class="bi bi-heart"
+                              style="background-color: #eb3e32"
+                            ></i>
+                            <i class="bi bi-cart3"></i>
+                          </div>
+                        </div>
+                        <div class="product-info">
+                          <a
+                            href="https://sfresh.w2.exdomain.net/7898-t-chuong-xanh"
+                            title="Bông cải xanh"
+                            class="item-product-name"
+                            >Bông cải xanh</a
+                          >
+                          <div class="product__price">
+                            <span class="price">15,000đ</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="card-item">
+                        <div class="img-card" style="height: 230px">
+                          <a
+                            href="https://sfresh.w2.exdomain.net/7898-t-chuong-xanh"
+                          >
+                            <img
+                              src="https://sfresh.w2.exdomain.net/image/cache/catalog/sfresh/products/rau-cu/sp20-480x480.jpg"
+                              alt="Cà chua"
+                            />
+                          </a>
+                          <div class="product-action">
+                            <i
+                              class="bi bi-heart"
+                              style="background-color: #eb3e32"
+                            ></i>
+                            <i class="bi bi-cart3"></i>
+                          </div>
+                        </div>
+                        <div class="product-info">
+                          <a
+                            href="https://sfresh.w2.exdomain.net/7898-t-chuong-xanh"
+                            title="Cà chua"
+                            class="item-product-name"
+                            >Cà chua</a
+                          >
+                          <div class="product__price">
+                            <span class="price">15,000đ</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="card-item">
+                        <div class="img-card" style="height: 230px">
+                          <a
+                            href="https://sfresh.w2.exdomain.net/7898-t-chuong-xanh"
+                          >
+                            <img
+                              src="https://sfresh.w2.exdomain.net/image/cache/catalog/sfresh/products/rau-cu/sp7-480x480.jpg"
+                              alt="Hành tây"
+                            />
+                          </a>
+                          <div class="product-action">
+                            <i
+                              class="bi bi-heart"
+                              style="background-color: #eb3e32"
+                            ></i>
+                            <i class="bi bi-cart3"></i>
+                          </div>
+                        </div>
+                        <div class="product-info">
+                          <a
+                            href="https://sfresh.w2.exdomain.net/7898-t-chuong-xanh"
+                            title="Hành tây"
+                            class="item-product-name"
+                            >Hành tây</a
+                          >
+                          <div class="product__price">
+                            <span class="price">12,000đ</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="card-item">
+                        <div class="img-card" style="height: 230px">
+                          <a
+                            href="https://sfresh.w2.exdomain.net/7898-t-chuong-xanh"
+                          >
+                            <img
+                              src="	https://sfresh.w2.exdomain.net/image/cache/catalog/sfresh/products/rau-cu/sp30-480x480.jpg"
+                              alt="Khoai tây"
+                            />
+                          </a>
+                          <div class="product-action">
+                            <i
+                              class="bi bi-heart"
+                              style="background-color: #eb3e32"
+                            ></i>
+                            <i class="bi bi-cart3"></i>
+                          </div>
+                        </div>
+                        <div class="product-info">
+                          <a
+                            href="https://sfresh.w2.exdomain.net/7898-t-chuong-xanh"
+                            title="Khoai tây"
+                            class="item-product-name"
+                            >Khoai tây</a
+                          >
+                          <div class="product__price">
+                            <span class="price">25,000đ</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="card-item">
+                        <div class="img-card" style="height: 230px">
+                          <a
+                            href="https://sfresh.w2.exdomain.net/7898-t-chuong-xanh"
+                          >
+                            <img
+                              src="https://sfresh.w2.exdomain.net/image/cache/catalog/sfresh/products/rau-cu/sp15-480x480.jpg"
+                              alt="Nấm ăn"
+                            />
+                          </a>
+                          <div class="product-action">
+                            <i
+                              class="bi bi-heart"
+                              style="background-color: #eb3e32"
+                            ></i>
+                            <i class="bi bi-cart3"></i>
+                          </div>
+                        </div>
+                        <div class="product-info">
+                          <a
+                            href="https://sfresh.w2.exdomain.net/7898-t-chuong-xanh"
+                            title="Nấm ăn"
+                            class="item-product-name"
+                            >Nấm ăn</a
+                          >
+                          <div class="product__price">
+                            <span class="price">Liên hệ</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="delivery_express">
+      <div class="container">
+        <div class="bg">
+          <h2>Giao hàng miễn phí tận nhà trong vòng 24h</h2>
+          <div class="desc">
+            <p><a title="Tìm hiểu thêm" href="#">Tìm hiểu thêm</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container section_blog">
+      <div class="block-title">
+        <h2><a href="#" title="Tin tức mới nhất"> Tin tức mới nhất</a></h2>
+      </div>
+      <div class="blogs_mobile_base">
+        <div class="swiper-container swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="item_blog_base">
+                <a
+                  class="thumb"
+                  href="https://sfresh.w2.exdomain.net/di-cho-online-xu-huong-len-ngoi-mua-dich-covid-19"
+                  title="Đi chợ online: Xu hướng lên ngôi mùa dịch Covid-19"
+                >
+                  <img
+                    src="https://sfresh.w2.exdomain.net/image/cache/catalog/sfresh/tin-tuc/t4-480x480.jpg"
+                    alt="Đi chợ online: Xu hướng lên ngôi mùa dịch Covid-19"
+                    class="lazy img-responsive loaded"
+                    data-was-processed="true"
+                  />
+                </a>
+                <div class="content_blog clearfix">
+                  <h3>
+                    <a
+                      href="https://sfresh.w2.exdomain.net/di-cho-online-xu-huong-len-ngoi-mua-dich-covid-19"
+                      title="Đi chợ online: Xu hướng lên ngôi mùa dịch Covid-19"
+                      class="a-title"
+                      >Đi chợ online: Xu hướng lên ngôi mùa dịch Covid-19</a
+                    >
+                  </h3>
+                  <div class="time-post">
+                    <span class="icon posted">
+                      <span class="text bold"
+                        ><i class="bi bi-person-fill"></i> John Doe</span
+                      >
+                      | <span class="text">30/06/2022</span>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="item_blog_base">
+                <a
+                  class="thumb"
+                  href="https://sfresh.w2.exdomain.net/cach-chon-rau-cu-qua-sach-tuoi-ngon-khong-a-ngam-doca"
+                  title="Cách chọn rau củ quả sạch tươi ngon, không ngâm độc"
+                >
+                  <img
+                    src="https://sfresh.w2.exdomain.net/image/cache/catalog/sfresh/tin-tuc/t5-480x480.jpg"
+                    alt="Cách chọn rau củ quả sạch tươi ngon, không ngâm độc"
+                    class="lazy img-responsive loaded"
+                    data-was-processed="true"
+                  />
+                </a>
+                <div class="content_blog clearfix">
+                  <h3>
+                    <a
+                      href="https://sfresh.w2.exdomain.net/cach-chon-rau-cu-qua-sach-tuoi-ngon-khong-a-ngam-doca"
+                      title="Cách chọn rau củ quả sạch tươi ngon, không ngâm độc"
+                      class="a-title"
+                      >Cách chọn rau củ quả sạch tươi ngon, không ngâm độc</a
+                    >
+                  </h3>
+                  <div class="time-post">
+                    <span class="icon posted">
+                      <span class="text bold"
+                        ><i class="bi bi-person-fill"></i> John Doe</span
+                      >
+                      | <span class="text">30/06/2022</span>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="item_blog_base">
+                <a
+                  class="thumb"
+                  href="https://sfresh.w2.exdomain.net/cac-loai-ngu-coc-tot-cho-suc-khoe"
+                  title="Các loại ngũ cốc tốt cho sức khỏe"
+                >
+                  <img
+                    src="https://sfresh.w2.exdomain.net/image/cache/catalog/sfresh/tin-tuc/t6-480x480.jpg"
+                    alt="Các loại ngũ cốc tốt cho sức khỏe"
+                    class="lazy img-responsive loaded"
+                    data-was-processed="true"
+                  />
+                </a>
+                <div class="content_blog clearfix">
+                  <h3>
+                    <a
+                      href="https://sfresh.w2.exdomain.net/cac-loai-ngu-coc-tot-cho-suc-khoe"
+                      title="Các loại ngũ cốc tốt cho sức khỏe"
+                      class="a-title"
+                      >Các loại ngũ cốc tốt cho sức khỏe</a
+                    >
+                  </h3>
+                  <div class="time-post">
+                    <span class="icon posted">
+                      <span class="text bold"
+                        ><i class="bi bi-person-fill"></i> John Doe</span
+                      >
+                      | <span class="text">30/06/2022</span>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="item_blog_base">
+                <a
+                  class="thumb"
+                  href="https://sfresh.w2.exdomain.net/cac-cach-che-bien-mon-an-tu-rau-xanh"
+                  title="Các cách chế biến món ăn từ rau xanh"
+                >
+                  <img
+                    src="https://sfresh.w2.exdomain.net/image/cache/catalog/sfresh/tin-tuc/t1-480x480.jpg"
+                    alt="Các cách chế biến món ăn từ rau xanh"
+                    class="lazy img-responsive loaded"
+                    data-was-processed="true"
+                  />
+                </a>
+                <div class="content_blog clearfix">
+                  <h3>
+                    <a
+                      href="https://sfresh.w2.exdomain.net/cac-cach-che-bien-mon-an-tu-rau-xanh"
+                      title="Các cách chế biến món ăn từ rau xanh"
+                      class="a-title"
+                      >Các cách chế biến món ăn từ rau xanh</a
+                    >
+                  </h3>
+                  <div class="time-post">
+                    <span class="icon posted">
+                      <span class="text bold"
+                        ><i class="bi bi-person-fill"></i> John Doe</span
+                      >
+                      | <span class="text">30/06/2022</span>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="item_blog_base">
+                <a
+                  class="thumb"
+                  href="https://sfresh.w2.exdomain.net/bat-mi-6-bi-kip-khi-lam-vuon-rau-sach-tai-nha"
+                  title="Bật mí 6 bí kíp khi làm vườn rau sạch tại nhà"
+                >
+                  <img
+                    src="https://sfresh.w2.exdomain.net/image/cache/catalog/sfresh/tin-tuc/t2-480x480.jpg"
+                    alt="Bật mí 6 bí kíp khi làm vườn rau sạch tại nhà"
+                    class="lazy img-responsive"
+                  />
+                </a>
+                <div class="content_blog clearfix">
+                  <h3>
+                    <a
+                      href="https://sfresh.w2.exdomain.net/bat-mi-6-bi-kip-khi-lam-vuon-rau-sach-tai-nha"
+                      title="Bật mí 6 bí kíp khi làm vườn rau sạch tại nhà"
+                      class="a-title"
+                      >Bật mí 6 bí kíp khi làm vườn rau sạch tại nhà</a
+                    >
+                  </h3>
+                  <div class="time-post">
+                    <span class="icon posted">
+                      <span class="text bold"
+                        ><i class="bi bi-person-fill"></i> John Doe</span
+                      >
+                      | <span class="text">30/06/2022</span>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="item_blog_base">
+                <a
+                  class="thumb"
+                  href="https://sfresh.w2.exdomain.net/dau-xanh-co-tac-dung-gi-nhung-mon-an-dinh-duong-tu-dau-xanh"
+                  title="Đậu xanh có tác dụng gì? Những món ăn dinh dưỡng từ đậu xanh"
+                >
+                  <img
+                    src="https://sfresh.w2.exdomain.net/image/cache/catalog/sfresh/tin-tuc/t3-480x480.jpg"
+                    alt="Đậu xanh có tác dụng gì? Những món ăn dinh dưỡng từ đậu xanh"
+                    class="lazy img-responsive"
+                  />
+                </a>
+                <div class="content_blog clearfix">
+                  <h3>
+                    <a
+                      href="https://sfresh.w2.exdomain.net/dau-xanh-co-tac-dung-gi-nhung-mon-an-dinh-duong-tu-dau-xanh"
+                      title="Đậu xanh có tác dụng gì? Những món ăn dinh dưỡng từ đậu xanh"
+                      class="a-title"
+                      >Đậu xanh có tác dụng gì? Những món ăn dinh dưỡng từ đậu
+                      xanh</a
+                    >
+                  </h3>
+                  <div class="time-post">
+                    <span class="icon posted">
+                      <span class="text bold"
+                        ><i class="bi bi-person-fill"></i> John Doe</span
+                      >
+                      | <span class="text">30/06/2022</span>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div>
+      <div class="section_product line-item-product-right">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-9 col-lg-9 col-md-8 col-12 list-itemCard">
+              <div class="slide-contant">
+                <div #swiperRef="" class="swiper mySwiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="card-item">
+                        <div class="img-card" style="height: 230px">
+                          <a
+                            href="https://sfresh.w2.exdomain.net/7898-t-chuong-xanh"
+                          >
+                            <img
+                              src="https://sfresh.w2.exdomain.net/image/cache/catalog/sfresh/products/rau-cu/sp17-2-480x480.jpg"
+                              alt="Ớt chuông xanh"
+                            />
+                          </a>
+                          <div class="product-action">
+                            <i
+                              class="bi bi-heart"
+                              style="background-color: #eb3e32"
+                            ></i>
+                            <i class="bi bi-cart3"></i>
+                          </div>
+                        </div>
+                        <div class="product-info">
+                          <a
+                            href="https://sfresh.w2.exdomain.net/7898-t-chuong-xanh"
+                            title="Ớt chuông xanh"
+                            class="item-product-name"
+                            >Ớt chuông xanh</a
+                          >
+                          <div class="product__price">
+                            <span class="price">12,000đ</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="card-item">
+                        <div class="img-card" style="height: 230px">
+                          <a
+                            href="https://sfresh.w2.exdomain.net/banh-mi-g-7889-i"
+                          >
+                            <img
+                              src="https://sfresh.w2.exdomain.net/image/cache/catalog/sfresh/products/thuc-pham-kho/sp24-480x480.jpg"
+                              alt="Bánh mì gối"
+                            />
+                          </a>
+                          <div class="product-action">
+                            <i
+                              class="bi bi-heart"
+                              style="background-color: #eb3e32"
+                            ></i>
+                            <i class="bi bi-cart3"></i>
+                          </div>
+                        </div>
+                        <div class="product-info">
+                          <a
+                            href="https://sfresh.w2.exdomain.net/7898-t-chuong-xanh"
+                            title="Ớt chuông xanh"
+                            class="item-product-name"
+                            >Bánh mì gối</a
+                          >
+                          <div class="product__price">
+                            <span class="price">20,000đ</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="card-item">
+                        <div class="img-card" style="height: 230px">
+                          <a
+                            href="https://sfresh.w2.exdomain.net/7898-t-chuong-xanh"
+                          >
+                            <img
+                              src="https://sfresh.w2.exdomain.net/image/cache/catalog/sfresh/products/thuc-pham-kho/sp32-480x480.jpg"
+                              alt="Bơ nấu ăn"
+                            />
+                          </a>
+                          <div class="product-action">
+                            <i
+                              class="bi bi-heart"
+                              style="background-color: #eb3e32"
+                            ></i>
+                            <i class="bi bi-cart3"></i>
+                          </div>
+                        </div>
+                        <div class="product-info">
+                          <a
+                            href="https://sfresh.w2.exdomain.net/7898-t-chuong-xanh"
+                            title="Bơ nấu ăn"
+                            class="item-product-name"
+                            >Bơ nấu ăn</a
+                          >
+                          <div class="product__price">
+                            <span class="price">Liên hệ</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="card-item">
+                        <div class="img-card" style="height: 230px">
+                          <a
+                            href="https://sfresh.w2.exdomain.net/7898-t-chuong-xanh"
+                          >
+                            <img
+                              src="https://sfresh.w2.exdomain.net/image/cache/catalog/sfresh/products/rau-cu/sp14-480x480.jpg"
+                              alt="Bông cải xanh"
+                            />
+                          </a>
+                          <div class="product-action">
+                            <i
+                              class="bi bi-heart"
+                              style="background-color: #eb3e32"
+                            ></i>
+                            <i class="bi bi-cart3"></i>
+                          </div>
+                        </div>
+                        <div class="product-info">
+                          <a
+                            href="https://sfresh.w2.exdomain.net/7898-t-chuong-xanh"
+                            title="Bông cải xanh"
+                            class="item-product-name"
+                            >Bông cải xanh</a
+                          >
+                          <div class="product__price">
+                            <span class="price">15,000đ</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="card-item">
+                        <div class="img-card" style="height: 230px">
+                          <a
+                            href="https://sfresh.w2.exdomain.net/7898-t-chuong-xanh"
+                          >
+                            <img
+                              src="https://sfresh.w2.exdomain.net/image/cache/catalog/sfresh/products/rau-cu/sp20-480x480.jpg"
+                              alt="Cà chua"
+                            />
+                          </a>
+                          <div class="product-action">
+                            <i
+                              class="bi bi-heart"
+                              style="background-color: #eb3e32"
+                            ></i>
+                            <i class="bi bi-cart3"></i>
+                          </div>
+                        </div>
+                        <div class="product-info">
+                          <a
+                            href="https://sfresh.w2.exdomain.net/7898-t-chuong-xanh"
+                            title="Cà chua"
+                            class="item-product-name"
+                            >Cà chua</a
+                          >
+                          <div class="product__price">
+                            <span class="price">15,000đ</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="card-item">
+                        <div class="img-card" style="height: 230px">
+                          <a
+                            href="https://sfresh.w2.exdomain.net/7898-t-chuong-xanh"
+                          >
+                            <img
+                              src="https://sfresh.w2.exdomain.net/image/cache/catalog/sfresh/products/rau-cu/sp7-480x480.jpg"
+                              alt="Hành tây"
+                            />
+                          </a>
+                          <div class="product-action">
+                            <i
+                              class="bi bi-heart"
+                              style="background-color: #eb3e32"
+                            ></i>
+                            <i class="bi bi-cart3"></i>
+                          </div>
+                        </div>
+                        <div class="product-info">
+                          <a
+                            href="https://sfresh.w2.exdomain.net/7898-t-chuong-xanh"
+                            title="Hành tây"
+                            class="item-product-name"
+                            >Hành tây</a
+                          >
+                          <div class="product__price">
+                            <span class="price">12,000đ</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="card-item">
+                        <div class="img-card" style="height: 230px">
+                          <a
+                            href="https://sfresh.w2.exdomain.net/7898-t-chuong-xanh"
+                          >
+                            <img
+                              src="	https://sfresh.w2.exdomain.net/image/cache/catalog/sfresh/products/rau-cu/sp30-480x480.jpg"
+                              alt="Khoai tây"
+                            />
+                          </a>
+                          <div class="product-action">
+                            <i
+                              class="bi bi-heart"
+                              style="background-color: #eb3e32"
+                            ></i>
+                            <i class="bi bi-cart3"></i>
+                          </div>
+                        </div>
+                        <div class="product-info">
+                          <a
+                            href="https://sfresh.w2.exdomain.net/7898-t-chuong-xanh"
+                            title="Khoai tây"
+                            class="item-product-name"
+                            >Khoai tây</a
+                          >
+                          <div class="product__price">
+                            <span class="price">25,000đ</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="card-item">
+                        <div class="img-card" style="height: 230px">
+                          <a
+                            href="https://sfresh.w2.exdomain.net/7898-t-chuong-xanh"
+                          >
+                            <img
+                              src="https://sfresh.w2.exdomain.net/image/cache/catalog/sfresh/products/rau-cu/sp15-480x480.jpg"
+                              alt="Nấm ăn"
+                            />
+                          </a>
+                          <div class="product-action">
+                            <i
+                              class="bi bi-heart"
+                              style="background-color: #eb3e32"
+                            ></i>
+                            <i class="bi bi-cart3"></i>
+                          </div>
+                        </div>
+                        <div class="product-info">
+                          <a
+                            href="https://sfresh.w2.exdomain.net/7898-t-chuong-xanh"
+                            title="Nấm ăn"
+                            class="item-product-name"
+                            >Nấm ăn</a
+                          >
+                          <div class="product__price">
+                            <span class="price">Liên hệ</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-4 col-12">
+              <div
+                style="
+                  background: url(https://sfresh.w2.exdomain.net/image/cache/catalog/sfresh/products/bg-title-link-2-0x0.jpg)
+                    no-repeat center !important;
+                  height: 305px;
+                "
+                class="title-links"
+              >
+                <h2 title="Rau củ quả">Rau củ quả</h2>
+                <div class="block-cate">
+                  <ul>
+                    <li>
+                      <a
+                        href="https://sfresh.w2.exdomain.net/chuoi"
+                        title="Chuối"
+                        >Chuối</a
+                      >
+                    </li>
+                    <li>
+                      <a href="https://sfresh.w2.exdomain.net/tao" title="Táo"
+                        >Táo</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div class="view-more">
+                  <p>
+                    <a title="Mua sắm ngay bây giờ!">Mua sắm ngay bây giờ!</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-12 col-12 col-main-footer">
+            <div class="content-main-footer">
+              <h4 style="text-transform: uppercase; font-size: 15px">
+                Đăng ký nhận thông tin
+              </h4>
+              <p>
+                Đăng ký nhận bản tin để nhận ưu đãi đặc biệt về sản phẩm S.Fresh
+              </p>
+
+              <form>
+                <div class="row">
+                  <div class="col-md-12 col-12 clearfix">
+                    <div class="row">
+                      <div class="clearfix"></div>
+                      <div
+                        class="col-sm-12 col-12 form-group"
+                        style="margin-bottom: 10px"
+                      >
+                        <input
+                          type="text"
+                          class="form-control email required"
+                          name="email"
+                          placeholder="Email"
+                          required
+                        />
+                        <p style="text-align: left; padding: 0; margin: 0">
+                          <span id="sub_erroremail0"></span>
+                        </p>
+                        <p style="text-align: left; padding: 0; margin: 0">
+                          <span id="sub_validemail0"></span>
+                        </p>
+                        <div class="input-group-append subscribe">
+                          <button
+                            type="submit"
+                            id="submitGmail"
+                            value="Đăng ký"
+                          >
+                            Đăng ký
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-newsletter__notification" id="showThank">
+                      <p class="alert alert-success" role="alert">
+                        Cảm ơn bạn đã liên hệ với chúng tôi. Chúng tôi sẽ trả
+                        lời bạn sớm nhất có thể.
+                      </p>
+                    </div>
+                    <div class="valid"></div>
+                  </div>
+                </div>
+                <input type="hidden" value="1" name="action" />
+              </form>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-12 mr-991 col-logo-footer">
+            <div class="logo-footer">
+              <a href="#"><img src="./image/logo.png" alt="logo" /></a>
+            </div>
+            <div class="content-footer">
+              Website thương mại điện tử S.Fresh do S Group là đơn vị chủ quản,
+              chịu trách nhiệm và thực hiện các giao dịch liên quan mua sắm sản
+              phẩm hàng hoá tiêu dùng thiết yếu.
+            </div>
+            <div class="img-footer d-lg-block d-none">
+              <img
+                src="https://sfresh.w2.exdomain.net/image/catalog/sfresh/img-footer.png"
+                alt="S.Fresh"
+              />
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-12 mr-991 col-contact-footer">
+            <div class="title-menu">
+              <h4>Liên hệ</h4>
+              <ul>
+                <li>Địa chỉ: A12, Đinh Tiên Hoàng, Q. Hoàn Kiếm, Hà Nội</li>
+                <li>Điện thoại: <a href="tel:0123 456 789">0123 456 789</a></li>
+                <li>
+                  Email:
+                  <a href="mailto:contact@yourdomain.com"
+                    >contact@yourdomain.com</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright-main">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 col-md-12 col-12">
+              <div class="copyright">
+                <span>© Copyright 2022-2023 S.Fresh.</span>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-12 col-12"></div>
+            <div class="col-lg-4 col-md-12 col-12">
+              <div class="social-footer">
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-twitter"></i></a>
+                <a href="#"><i class="bi bi-youtube"></i></a>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div style="height: 1000px"></div> -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/swiper@10.3.1/swiper-bundle.min.js"
+      integrity="sha256-00IsGChxE1Zm2mhUGbvtSAoI9R/q2VRvuVllpuR0UKM="
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
